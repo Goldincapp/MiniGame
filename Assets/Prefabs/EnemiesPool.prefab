@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9202210422813961188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9202210422813961187}
+  - component: {fileID: 382338434470722038}
+  m_Layer: 0
+  m_Name: EnemiesPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9202210422813961187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9202210422813961188}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.18490918, y: 0.71889824, z: -0.046025366}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &382338434470722038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9202210422813961188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e55b433aaf8d0544ca96bf99d48cf89f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _smallMeteorsPrefabs:
+  - {fileID: 6184050005435927582, guid: eeb0ec0a9ebaeeb4282965eea16fb9fd, type: 3}
+  - {fileID: 6184050005435927582, guid: 5e644e90e34f87b44b0a6ac3d147c82b, type: 3}
+  - {fileID: 6184050005435927582, guid: e0180d14b08c53f49aabe065f8fdc2c7, type: 3}
+  - {fileID: 6184050005435927582, guid: d07c31d72c36b2645a5037695f54139d, type: 3}
+  - {fileID: 6184050005435927582, guid: 9ed6bb0898324864d80c64d8d8a133a2, type: 3}
+  _mediumMeteorsPrefabs:
+  - {fileID: 6184050005435927582, guid: 384e4f3268d21a549a40d47d464a1ca9, type: 3}
+  - {fileID: 6184050005435927582, guid: eedf05a3e87a228489aafb88d08e9a78, type: 3}
+  - {fileID: 6184050005435927582, guid: 658fb2270eada1e4bbb2e32a80bdddb7, type: 3}
+  _largeMeteorsPrefabs:
+  - {fileID: 6184050005435927582, guid: 5f36f6df7a9c0d0419e1ca8f8ea562aa, type: 3}
+  - {fileID: 6184050005435927582, guid: 205cfb8696c7a8f43939cc2c3f807b5f, type: 3}
+  - {fileID: 6184050005435927582, guid: 18e3e1ad815307c4c99107ae6ee71a53, type: 3}
+  - {fileID: 6184050005435927582, guid: b378b17c07399004184cec71215001e9, type: 3}
+  - {fileID: 6184050005435927582, guid: 85cdbfda0ddfbee4c8c22664fc172e5d, type: 3}
+  - {fileID: 6184050005435927582, guid: 3d9d4ee629ada7245baeee438beaf1f6, type: 3}
+  _friendsPrefabs:
+  - {fileID: 4507767746097643104, guid: 9baf9307f1d08a848b1f2c8f8a1d5487, type: 3}
+  - {fileID: 4507767746097643104, guid: 8052a5c2cd9b2d34cb7b1dfb7ca56b57, type: 3}
+  - {fileID: 4507767746097643104, guid: e94d99d92483af049bfd3afcdfc5c651, type: 3}
+  _specialEnemiesPrefabs:
+  - {fileID: 4507767746097643104, guid: 48aff2bf9139e294fbaf4232614b06b0, type: 3}
+  - {fileID: 4507767746097643104, guid: efbb08d925d7d8840bb7c6ee49769d10, type: 3}
+  - {fileID: 4507767746097643104, guid: 69d720efdab1aaf4e991416a0ddf1e19, type: 3}
+  - {fileID: 4507767746097643104, guid: 86ae3df48e626134ba3317a42c55d5d5, type: 3}
