@@ -128,10 +128,10 @@ public class GUI : SingletonComponent<GUI>
 
     public void PlayCameraAnimation()
     {
-        if (_cameraAnimation.isPlaying)
-            _cameraAnimation.Stop();
+        //if (_cameraAnimation.isPlaying)
+        //    _cameraAnimation.Stop();
 
-        _cameraAnimation.Play();
+        //_cameraAnimation.Play();
     }
 
     public void UpdateLeaderBoard()

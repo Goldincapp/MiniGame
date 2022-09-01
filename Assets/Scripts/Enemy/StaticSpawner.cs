@@ -94,8 +94,8 @@ public class StaticSpawner : MonoBehaviour
         var camera = Camera.main;
         var spawnPosition = Vector3.zero;
 
-        var random1 = 0;//Random.Range(0, 2); // 00 - down, 01 - up, 10 - left, 11 - right
-        var random2 = 0;//Random.Range(0, 2); 
+        var random1 = Random.Range(0, 2); // 00 - down, 01 - up, 10 - left, 11 - right
+        var random2 = Random.Range(0, 2); 
 
         if (random1 == 0)
             spawnPosition = camera.ScreenToWorldPoint(new Vector3(Random.Range(0, camera.pixelWidth), random2 == 0 ? 0 : camera.pixelHeight, -camera.transform.position.z));
