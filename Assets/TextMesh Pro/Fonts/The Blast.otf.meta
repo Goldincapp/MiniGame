@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ecec23d37ef8cac4c9c7fb07deb4eaa0
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - The Blast
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b754fa9ed857d5445939eeb64889aac2, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
