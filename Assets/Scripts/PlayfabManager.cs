@@ -24,9 +24,9 @@ public class PlayfabManager : SingletonComponent<PlayfabManager>
         Debug.Log("Logging in...");
 
         var walletText = wallet.text;
-        var nametText = username.text;
+        var nameText = username.text;
 
-        if (string.IsNullOrEmpty(walletText) || string.IsNullOrEmpty(nametText))
+        if (string.IsNullOrEmpty(walletText) || string.IsNullOrEmpty(nameText))
             LoginWarning();
         else
             Login(wallet.text + username.text);
@@ -86,10 +86,43 @@ public class PlayfabManager : SingletonComponent<PlayfabManager>
         SendLeaderboard(_uiManager.GetScore);
     }
 
+    void SetUserData()
+    {
+        PlayFabClientAPI.UpdateUserData(new UpdateUserDataRequest()
+            {
+                Data = new Dictionary<string, string>() {
+                    {"Wallet", wallet.text}
+                }
+            },
+            result => Debug.Log("Successfully updated user data"),
+            error => {
+                Debug.Log("Got error setting user data wallet");
+                Debug.Log(error.GenerateErrorReport());
+            });
+    }
+
+    void GetUserData(string myPlayFabId)
+    {
+        PlayFabClientAPI.GetUserData(new GetUserDataRequest()
+        {
+            PlayFabId = myPlayFabId,
+            Keys = null
+        }, result => {
+            Debug.Log("Got user data:");
+            if (result.Data == null || !result.Data.ContainsKey("Wallet")) Debug.Log("No Wallet");
+            else Debug.Log("Wallet: " + result.Data["Wallet"].Value);
+        }, (error) => {
+            Debug.Log("Got error retrieving user data:");
+            Debug.Log(error.GenerateErrorReport());
+        });
+    }
+
     void OnLoginSuccess(LoginResult result)
     {
         Debug.Log("Successfull login");
         UpdateName(username.text);
+        SetUserData();
+        GetUserData(result.PlayFabId);
     }
 
     void OnLoginError(PlayFabError error)
