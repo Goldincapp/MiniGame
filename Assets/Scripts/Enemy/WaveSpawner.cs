@@ -1,22 +1,23 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using OPS.AntiCheat.Field;
 
 public class WaveSpawner : StaticSpawner
 {
     [Header("Wave Settings")]
     [SerializeField] private StaticSpawner _staticSpawner;
-    [SerializeField] private float _resumeSpawnDelay = 5f;
-    [SerializeField] private float _delayBeforeSpawn = 0.8f;
-    [SerializeField] private int _minCount = 3;
-    [SerializeField] private int _maxCount = 5;
+    [SerializeField] private ProtectedFloat _resumeSpawnDelay = 5f;
+    [SerializeField] private ProtectedFloat _delayBeforeSpawn = 0.8f;
+    [SerializeField] private ProtectedInt16 _minCount = 3;
+    [SerializeField] private ProtectedInt16 _maxCount = 5;
 
     [Header("Wave Difficility Growth")]
-    [SerializeField] private float _minCountValue;
-    [SerializeField] private float _maxCountValue;
+    [SerializeField] private ProtectedFloat _minCountValue;
+    [SerializeField] private ProtectedFloat _maxCountValue;
 
-    private float _currentMinCount;
-    private float _currentMaxCount;
+    private ProtectedFloat _currentMinCount;
+    private ProtectedFloat _currentMaxCount;
 
     public override void ActivateSpawner()
     {

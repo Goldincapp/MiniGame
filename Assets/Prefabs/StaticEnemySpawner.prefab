@@ -46,13 +46,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemiesChance:
   - enemyType: 3
-    chance: 100
+    chance: 55
+  - enemyType: 4
+    chance: 3
+  - enemyType: 5
+    chance: 2
+  - enemyType: 1
+    chance: 20
+  - enemyType: 2
+    chance: 20
   parent: {fileID: 0}
-  minCooldown: 1
-  maxCooldown: 1.5
-  speedCoeficient: 1
-  difficilityCooldown: 10
-  minCooldownValue: 0.005
-  maxCooldownValue: 0.0075
-  stopGrowthCooldownValue: 0.25
-  speedCoeficientValue: 0.005
+  minCooldown:
+    fakeValue: 1
+  maxCooldown:
+    fakeValue: 1.5
+  speedCoeficient:
+    fakeValue: 1
+  difficilityCooldown:
+    fakeValue: 10
+  minCooldownValue:
+    fakeValue: 0.005
+  maxCooldownValue:
+    fakeValue: 0.0075
+  stopGrowthCooldownValue:
+    fakeValue: 0.25
+  speedCoeficientValue:
+    fakeValue: 0.005

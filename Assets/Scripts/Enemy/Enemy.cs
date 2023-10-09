@@ -1,3 +1,4 @@
+using OPS.AntiCheat.Field;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,8 +7,8 @@ public class Enemy : MonoBehaviour
 {
     [Header("Characteristic")]
     public EnemyType enemyType;
-    [SerializeField] private float _minSpeed;
-    [SerializeField] private float _maxSpeed;
+    [SerializeField] private ProtectedFloat _minSpeed;
+    [SerializeField] private ProtectedFloat _maxSpeed;
 
     [Header("Spawn On Destroy")]
     [SerializeField] private List<EnemyType> _child = new List<EnemyType>();
@@ -25,7 +26,10 @@ public class Enemy : MonoBehaviour
 
     private Transform _parent;
     private float _speedCoeficient;
-    public float _speed;
+    protected float _speed;
+
+    protected ProtectedInt16 _specialReward = 5;
+    protected ProtectedInt16 _regularReward = 1;
 
     private void OnDisable()
     {
@@ -131,7 +135,7 @@ public class Enemy : MonoBehaviour
             }
         }
 
-        GUI.Instance?.UpdateScoreCounter(enemyType == EnemyType.Special ? 5 : enemyType != EnemyType.Friendly ? 1 : 0);
+        GUI.Instance?.UpdateScoreCounter(enemyType == EnemyType.Special ? _specialReward : enemyType != EnemyType.Friendly ? _regularReward : 0);
 
         PlayDestroySound(); 
         StartCoroutine(DestroyEffect());

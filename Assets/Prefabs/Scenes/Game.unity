@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3719,7 +3719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1435865421783835481, guid: ed4093f35bf25c34a947acd0e556ba90, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3.6309967
+      value: 3.6309814
       objectReference: {fileID: 0}
     - target: {fileID: 1435865421912011512, guid: ed4093f35bf25c34a947acd0e556ba90, type: 3}
       propertyPath: m_fontAsset
@@ -3843,70 +3843,6 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 1538920484}
-    - target: {fileID: 4682237060994084932, guid: a0f8881f70bd7f74eb2bf2f538ab05cc, type: 3}
-      propertyPath: speedCoeficient
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682237060994084932, guid: a0f8881f70bd7f74eb2bf2f538ab05cc, type: 3}
-      propertyPath: difficilityCooldown
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682237060994084932, guid: a0f8881f70bd7f74eb2bf2f538ab05cc, type: 3}
-      propertyPath: speedCoeficientValue
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682237060994084932, guid: a0f8881f70bd7f74eb2bf2f538ab05cc, type: 3}
-      propertyPath: enemiesChance.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682237060994084932, guid: a0f8881f70bd7f74eb2bf2f538ab05cc, type: 3}
-      propertyPath: enemiesChance.Array.data[0].chance
-      value: 55
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682237060994084932, guid: a0f8881f70bd7f74eb2bf2f538ab05cc, type: 3}
-      propertyPath: enemiesChance.Array.data[1].chance
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682237060994084932, guid: a0f8881f70bd7f74eb2bf2f538ab05cc, type: 3}
-      propertyPath: enemiesChance.Array.data[2].chance
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682237060994084932, guid: a0f8881f70bd7f74eb2bf2f538ab05cc, type: 3}
-      propertyPath: enemiesChance.Array.data[3].chance
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682237060994084932, guid: a0f8881f70bd7f74eb2bf2f538ab05cc, type: 3}
-      propertyPath: enemiesChance.Array.data[4].chance
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682237060994084932, guid: a0f8881f70bd7f74eb2bf2f538ab05cc, type: 3}
-      propertyPath: enemiesChance.Array.data[5].chance
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682237060994084932, guid: a0f8881f70bd7f74eb2bf2f538ab05cc, type: 3}
-      propertyPath: enemiesChance.Array.data[0].enemyType
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682237060994084932, guid: a0f8881f70bd7f74eb2bf2f538ab05cc, type: 3}
-      propertyPath: enemiesChance.Array.data[1].enemyType
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682237060994084932, guid: a0f8881f70bd7f74eb2bf2f538ab05cc, type: 3}
-      propertyPath: enemiesChance.Array.data[2].enemyType
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682237060994084932, guid: a0f8881f70bd7f74eb2bf2f538ab05cc, type: 3}
-      propertyPath: enemiesChance.Array.data[3].enemyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682237060994084932, guid: a0f8881f70bd7f74eb2bf2f538ab05cc, type: 3}
-      propertyPath: enemiesChance.Array.data[4].enemyType
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682237060994084932, guid: a0f8881f70bd7f74eb2bf2f538ab05cc, type: 3}
-      propertyPath: enemiesChance.Array.data[5].enemyType
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4682237060994084933, guid: a0f8881f70bd7f74eb2bf2f538ab05cc, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -4206,45 +4142,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1538920484}
     - target: {fileID: 8822129273424558427, guid: e01171956afd7aa4581329fd0ee3dc53, type: 3}
-      propertyPath: maxCooldown
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 8822129273424558427, guid: e01171956afd7aa4581329fd0ee3dc53, type: 3}
-      propertyPath: minCooldown
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8822129273424558427, guid: e01171956afd7aa4581329fd0ee3dc53, type: 3}
-      propertyPath: _maxCountValue
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8822129273424558427, guid: e01171956afd7aa4581329fd0ee3dc53, type: 3}
       propertyPath: _staticSpawner
       value: 
       objectReference: {fileID: 1931492470}
-    - target: {fileID: 8822129273424558427, guid: e01171956afd7aa4581329fd0ee3dc53, type: 3}
-      propertyPath: _delayBeforeSpawn
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8822129273424558427, guid: e01171956afd7aa4581329fd0ee3dc53, type: 3}
-      propertyPath: _resumeSpawnDelay
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8822129273424558427, guid: e01171956afd7aa4581329fd0ee3dc53, type: 3}
-      propertyPath: difficilityCooldown
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8822129273424558427, guid: e01171956afd7aa4581329fd0ee3dc53, type: 3}
-      propertyPath: speedCoeficientValue
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 8822129273424558427, guid: e01171956afd7aa4581329fd0ee3dc53, type: 3}
-      propertyPath: enemiesChance.Array.data[0].chance
-      value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 8822129273424558427, guid: e01171956afd7aa4581329fd0ee3dc53, type: 3}
-      propertyPath: enemiesChance.Array.data[1].chance
-      value: 25
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e01171956afd7aa4581329fd0ee3dc53, type: 3}
 --- !u!1001 &9202210421929622471

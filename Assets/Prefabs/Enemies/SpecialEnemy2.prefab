@@ -50,8 +50,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyType: 2
-  _minSpeed: 1.5
-  _maxSpeed: 3
+  _minSpeed:
+    fakeValue: 1.5
+  _maxSpeed:
+    fakeValue: 3
   _child: 
   _childSpeedCoeficient: 0.5
   _rigidBody: {fileID: 1374849150590166117}
@@ -60,7 +62,6 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 6094954427802303438}
   _sphereCollider: {fileID: 436355745321571485}
   _destroyEffect: {fileID: 3243210529432759667}
-  _speed: 0
 --- !u!114 &4353437608062222738
 MonoBehaviour:
   m_ObjectHideFlags: 0

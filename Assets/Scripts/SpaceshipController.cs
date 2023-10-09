@@ -1,3 +1,5 @@
+using OPS.AntiCheat.Field;
+using OPS.AntiCheat.Speed;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,11 +7,11 @@ using UnityEngine;
 public class SpaceshipController : MonoBehaviour
 {
     [Header("Spaceship characteristic")]
-    [SerializeField] private float _maxMoveSpeed;
-    [SerializeField] private float _moveAcceleration;
-    [SerializeField] private float _brakesForce;
-    [SerializeField] private float _stopBrakesValue;
-    [SerializeField] private float _rotateSpeed;
+    [SerializeField] private ProtectedFloat _maxMoveSpeed;
+    [SerializeField] private ProtectedFloat _moveAcceleration;
+    [SerializeField] private ProtectedFloat _brakesForce;
+    [SerializeField] private ProtectedFloat _stopBrakesValue;
+    [SerializeField] private ProtectedFloat _rotateSpeed;
 
     [Header("Weapon & Projectile")]
     [SerializeField] private Weapon _weapon;
@@ -98,10 +100,10 @@ public class SpaceshipController : MonoBehaviour
                 _rigidBody.velocity -= _brakesForce * _rigidBody.velocity.normalized;
 
             if (Input.GetKey(KeyCode.RightArrow))
-                transform.Rotate(new Vector3(0, 0, -_rotateSpeed * Time.deltaTime), Space.Self);
+                transform.Rotate(new Vector3(0, 0, -_rotateSpeed * ProtectedTime.deltaTime), Space.Self);
 
             if (Input.GetKey(KeyCode.LeftArrow))
-                transform.Rotate(new Vector3(0, 0, _rotateSpeed * Time.deltaTime), Space.Self);
+                transform.Rotate(new Vector3(0, 0, _rotateSpeed * ProtectedTime.deltaTime), Space.Self);
 
             yield return null;
         }

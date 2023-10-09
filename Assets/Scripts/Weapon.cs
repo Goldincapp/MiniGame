@@ -1,3 +1,4 @@
+using OPS.AntiCheat.Field;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,13 +6,13 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     [Header("Weapon")]
-    [SerializeField] private float _cooldown;
+    [SerializeField] private ProtectedFloat _cooldown;
 
      [Header("Projectile")]
     [SerializeField] private GameObject _projectilePrefab;
     [SerializeField] private Transform _projectileSpawnTransform;
-    [SerializeField] private float _projectileDamage;
-    [SerializeField] private float _projectileSpeed;
+    [SerializeField] private ProtectedFloat _projectileDamage;
+    [SerializeField] private ProtectedFloat _projectileSpeed;
 
     private GameObject _projectileParent;
 

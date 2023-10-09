@@ -1,3 +1,4 @@
+using OPS.AntiCheat.Field;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,20 +8,20 @@ public class StaticSpawner : MonoBehaviour
     [Header("Spawn Settings")]
     [SerializeField] private List<EnemyChance> enemiesChance = new List<EnemyChance>();
     [SerializeField] protected Transform parent;
-    [SerializeField] protected float minCooldown;
-    [SerializeField] protected float maxCooldown;
-    [SerializeField] protected float speedCoeficient = 1f;
+    [SerializeField] protected ProtectedFloat minCooldown;
+    [SerializeField] protected ProtectedFloat maxCooldown;
+    [SerializeField] protected ProtectedFloat speedCoeficient = 1f;
 
     [Header("Difficility Growth")]
-    [SerializeField] protected float difficilityCooldown;
-    [SerializeField] protected float minCooldownValue;
-    [SerializeField] protected float maxCooldownValue;
-    [SerializeField] private float stopGrowthCooldownValue = 0.25f;
-    [SerializeField] protected float speedCoeficientValue;
+    [SerializeField] protected ProtectedFloat difficilityCooldown;
+    [SerializeField] protected ProtectedFloat minCooldownValue;
+    [SerializeField] protected ProtectedFloat maxCooldownValue;
+    [SerializeField] private ProtectedFloat stopGrowthCooldownValue = 0.25f;
+    [SerializeField] protected ProtectedFloat speedCoeficientValue;
 
-    protected float currentMinCooldown;
-    protected float currentMaxCooldown;
-    protected float currentSpeedCoeficient;
+    protected ProtectedFloat currentMinCooldown;
+    protected ProtectedFloat currentMaxCooldown;
+    protected ProtectedFloat currentSpeedCoeficient;
 
     protected Coroutine spawnCoroutine;
 

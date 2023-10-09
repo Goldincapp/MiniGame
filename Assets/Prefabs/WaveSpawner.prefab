@@ -46,21 +46,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemiesChance:
   - enemyType: 4
-    chance: 85
+    chance: 75
   - enemyType: 5
-    chance: 15
+    chance: 25
   parent: {fileID: 0}
-  minCooldown: 25
-  maxCooldown: 30
-  speedCoeficient: 1
-  difficilityCooldown: 10
-  minCooldownValue: 0
-  maxCooldownValue: 0
-  stopGrowthCooldownValue: 0
-  speedCoeficientValue: 0.005
+  minCooldown:
+    fakeValue: 25
+  maxCooldown:
+    fakeValue: 30
+  speedCoeficient:
+    fakeValue: 1
+  difficilityCooldown:
+    fakeValue: 10
+  minCooldownValue:
+    fakeValue: 0
+  maxCooldownValue:
+    fakeValue: 0
+  stopGrowthCooldownValue:
+    fakeValue: 0
+  speedCoeficientValue:
+    fakeValue: 0.005
   _staticSpawner: {fileID: 0}
-  _resumeSpawnDelay: 5
-  _minCount: 3
-  _maxCount: 5
-  _minCountValue: 0.5
-  _maxCountValue: 0.25
+  _resumeSpawnDelay:
+    fakeValue: 5
+  _delayBeforeSpawn:
+    fakeValue: 0.8
+  _minCount:
+    fakeValue: 3
+  _maxCount:
+    fakeValue: 5
+  _minCountValue:
+    fakeValue: 0.5
+  _maxCountValue:
+    fakeValue: 0.25

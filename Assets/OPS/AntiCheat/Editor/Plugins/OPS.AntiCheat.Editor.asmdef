@@ -1,0 +1,17 @@
+{
+    "name": "OPS.AntiCheat.Editor",
+    "references": [
+        "GUID:926504cc37d565a48bbe456d7adea408"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

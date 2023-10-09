@@ -2,6 +2,8 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 using System.Collections.Generic;
+using OPS.AntiCheat.Field;
+using OPS.AntiCheat.Speed;
 
 public class GUI : SingletonComponent<GUI>
 {
@@ -25,7 +27,7 @@ public class GUI : SingletonComponent<GUI>
 
     [SerializeField] private Animator _hintAnimator;
 
-    private int _score = 0;
+    private ProtectedInt32 _score = 0;
     private const int NAME_INDEX = 2;
     private const int VALUE_INDEX = 3;
 
@@ -110,12 +112,12 @@ public class GUI : SingletonComponent<GUI>
 
     private IEnumerator EndGameWithDelay()
     {
-        Time.timeScale = 0;
+        ProtectedTime.timeScale = 0;
         _spaceship.PlayDestroyEffect();
 
         yield return new WaitForSecondsRealtime(1.5f);
 
-        Time.timeScale = 1;
+        ProtectedTime.timeScale = 1;
 
         _spaceship.DeactivateSpaceship();
         _staticSpawner.DeactivateSpawner();

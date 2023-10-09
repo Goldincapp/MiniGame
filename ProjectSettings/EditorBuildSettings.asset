@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Prefabs/Scenes/PreloaderWWI.unity
+    guid: c1088f3949ced194d94d07c316f379f0
+  - enabled: 1
     path: Assets/Prefabs/Scenes/Game.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
