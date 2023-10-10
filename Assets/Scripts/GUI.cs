@@ -33,6 +33,8 @@ public class GUI : SingletonComponent<GUI>
 
     private void Start()
     {
+        SoundManager.Instance.PlayMenuMusic();
+
         StartCoroutine(SwitchByPressingEnter());
     }
 
@@ -87,6 +89,8 @@ public class GUI : SingletonComponent<GUI>
 
     public void StartGame()
     {
+        SoundManager.Instance.PlayGameMusic();
+
         _spaceship.ActivateSpaceship();
         _staticSpawner.ActivateSpawner();
         _waveSpawner.ActivateSpawner();
@@ -126,6 +130,8 @@ public class GUI : SingletonComponent<GUI>
         _menuUI.SetActive(true);
         _userInfoWindow.SetActive(true);
         _HUD.SetActive(false);
+
+        SoundManager.Instance.PlayMenuMusic();
     }
 
     public void PlayCameraAnimation()
