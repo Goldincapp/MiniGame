@@ -179,4 +179,9 @@ public class GUI : SingletonComponent<GUI>
     {
         _warning.SetActive(false);
     }
+
+    public void ShareButton()
+    {
+        Application.OpenURL($"https://twitter.com/intent/tweet?text=I%20just%20played%20Stellar%20Mini%20and%20this%20is%20my%20score%20%2D%20{_score}.%0A&via=SapphireRDC&hashtags=Web3Game,TryNow");
+    }
 }
